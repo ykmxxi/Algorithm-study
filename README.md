@@ -4,7 +4,8 @@
 
 # 자료구조
 
-
+- [자바(Java) 배열(Array)](https://ykmxxi.github.io/datastructure/Array/)
+- [자바(Java) 선형 자료구조: 연결 리스트(LinkedList)](https://ykmxxi.github.io/datastructure/LinkedList/)
 
 # 알고리즘
 
