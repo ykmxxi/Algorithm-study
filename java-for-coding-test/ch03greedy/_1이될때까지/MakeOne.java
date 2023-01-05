@@ -28,7 +28,7 @@ public class MakeOne {
             answer += 1;
             n /= k;
         }
-
+        answer += (n - 1); // 마지막으로 남은 수에 대하여 1씩 빼기
  */
 
         while (true) {
@@ -45,7 +45,6 @@ public class MakeOne {
             }
         }
 
-        answer += (n - 1); // 마지막으로 남은 수에 대하여 1씩 빼기
         System.out.println(answer);
     }
 }
