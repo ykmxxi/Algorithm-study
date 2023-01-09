@@ -14,24 +14,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-class Node {
-    private final int index;
-    private final int distance;
-
-    public Node(int index, int distance) {
-        this.index = index;
-        this.distance = distance;
-    }
-
-    public int getIndex() {
-        return index;
-    }
-
-    public int getDistance() {
-        return distance;
-    }
-}
-
 public class Dijkstra {
     public static final int INFINITE = (int) 1e9;
 
@@ -44,6 +26,7 @@ public class Dijkstra {
 
     /**
      * 방문하지 않은 노드 중 가장 최단 거리를 갖는 노드의 번호(인덱스)를 반환
+     *
      * @return 최단 거리 노드의 번호(인덱스)
      */
     public static int getSmallestNode() {
