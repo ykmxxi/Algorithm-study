@@ -26,7 +26,7 @@ public class Main {
                 sb.append(selected[i]).append(' ');
             }
             sb.append('\n');
-        } else {
+        } else { // M개를 다 고르지 않은 상태
             for (int candidate = 1; candidate <= N; candidate++) {
                 // k 번째에 candidate 가 올 수 있으면
                 selected[k] = candidate;

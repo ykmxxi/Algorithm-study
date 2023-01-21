@@ -27,14 +27,16 @@ public class Main {
             sb.append('\n');
         } else {
             for (int candidate = 1; candidate <= N; candidate++) {
-                if (used[candidate] == 1) {
+                if (used[candidate] == 1) { // 사용한 수는 넘어가
                     continue;
                 }
+                // k 번 째에 candidate 가 올 수 있으면
                 selected[k] = candidate;
                 used[candidate] = 1; // 숫자 사용
 
                 rec_func(k + 1);
 
+                // 초기화
                 selected[k] = 0;
                 used[candidate] = 0;
             }
