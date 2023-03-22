@@ -12,7 +12,6 @@ public class Main {
 	static int N, M;
 	static int[][] adj;
 	static int[][] dir = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
-	static boolean[][] visited;
 
 	static void input() throws IOException {
 		st = new StringTokenizer(br.readLine(), " ");
@@ -23,13 +22,13 @@ public class Main {
 		for (int i = 1; i <= N; i++) {
 			String input = br.readLine();
 			for (int j = 1; j <= M; j++) {
-				adj[i][j] = Integer.parseInt(input.substring(j - 1, j));
+				adj[i][j] = input.charAt(j - 1) - '0';
 			}
 		}
 	}
 
 	static void dfs(int x, int y) {
-		visited[x][y] = true;
+		adj[x][y] = 1; // 방문 처리
 
 		for (int k = 0; k < 4; k++) {
 			int nx = x + dir[k][0];
@@ -38,7 +37,7 @@ public class Main {
 			if (nx < 1 || ny < 1 || nx > N || ny > M) { // 범위를 벗어나거나
 				continue;
 			}
-			if (visited[nx][ny] || adj[nx][ny] == 1) { // 이미 방문 or 막혀 있으면
+			if (adj[nx][ny] == 1) { // 이미 방문 or 막혀 있으면
 				continue;
 			}
 
@@ -49,12 +48,11 @@ public class Main {
 	static void pro() {
 		// 초기화
 		int answer = 0;
-		visited = new boolean[N + 1][M + 1];
 
 		// dfs
 		for (int i = 1; i <= N; i++) {
 			for (int j = 1; j <= M; j++) {
-				if (visited[i][j] || adj[i][j] == 1) { // 이미 방문 or 막혀 있으면
+				if (adj[i][j] == 1) { // 이미 방문 or 막혀 있으면
 					continue;
 				}
 
