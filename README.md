@@ -7,6 +7,10 @@
 - [자바(Java) 배열(Array)](https://ykmxxi.github.io/datastructure/Array/)
 - [자바(Java) 선형 자료구조: 연결 리스트(LinkedList)](https://ykmxxi.github.io/datastructure/LinkedList/)
 - [자바(Java) 해시(Hash)](https://ykmxxi.github.io/datastructure/Hash/)
+- [자바(Java) 힙(Heap)](https://ykmxxi.github.io/datastructure/heap/)
+- [자바(Java) 트리(Tree)](https://ykmxxi.github.io/datastructure/Tree/)
+
+
 
 # 알고리즘
 
